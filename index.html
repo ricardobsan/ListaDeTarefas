@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="./Css/style.css"/>
 </head>
 <body>
-    
+  <h1>Lista de Tarefas</h1>
+
+  <div class="filtros">
+    <input type="text" id="filtroTitulo" placeholder="Filtrar por título">
+    <select id="filtroStatus">
+      <option value="todas" id="filt">Todas</option>
+      <option value="pendente"  id="filt">Pendentes</option>
+      <option value="concluida"  id="filt">Concluídas</option>
+    </select>
+  </div>
+
+  <div class="nova-tarefa">
+    <input type="text" id="titulo" placeholder="Título da tarefa">
+    <input type="text" id="descricao" placeholder="Descrição">
+    <input type="date" id="dataEntrega">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+  </div>
+
+  <div class="status-contador">
+    <span id="contadorPendentes">Pendentes: 0</span> |
+    <span id="contadorConcluidas">Concluídas: 0</span>
+  </div>
+
+ 
+  <div  id="listaTarefas"> </div>
+  
+
+  <script src="./JavaScript/main.js"></script>
 </body>
 </html>

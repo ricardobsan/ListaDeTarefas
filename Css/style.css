@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background: rgb(0, 58, 82);
+  color: #fff;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.tarefa {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  border-left: 14px solid #b57c00;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarefa strong {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.tarefa small {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.concluida {
+  text-decoration: line-through;
+  color: #aaa;
+  background: rgba(255, 255, 255, 0.03);
+  border-left-color: #4caf50;
+}
+
+.atrasada {
+  border-left-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.05);
+}
+
+.subtarefa {
+  margin-left: 20px;
+  padding-left: 12px;
+  border-left: 2px dashed rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+}
+
+.subtarefa span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.subtarefa span.concluida {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.filtros,
+.nova-tarefa,
+.status-contador {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #00adb5;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00adb5;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #008c9e;
+  transform: scale(1.03);
+}
+
+.status-contador {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #00adb5;
+}
+
+#filt{
+  color: black;
+}
