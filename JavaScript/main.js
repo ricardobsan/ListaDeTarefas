@@ -31,7 +31,7 @@ function atualizarLista() {
     const div = document.createElement('div');
     div.className = 'tarefa';
     if (tarefa.status === 'Concluída') div.classList.add('concluida');
-    if (tarefa.dataEntrega && new Date(tarefa.dataEntrega) < new Date() && tarefa.status !== 'Concluída') {
+    if (tarefaAtrasada(tarefa)) {
       div.classList.add('atrasada');
     }
 
@@ -112,6 +112,18 @@ function removerSubtarefa(index, si) {
   salvarTarefas();
   atualizarLista();
 }
+function tarefaAtrasada(tarefa) {
+  if (!tarefa.dataEntrega || tarefa.status === 'Concluída') return false;
+
+  const hoje = new Date();
+  const ano = hoje.getFullYear();
+  const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+  const dia = String(hoje.getDate()).padStart(2, '0');
+  const dataHojeStr = `${ano}-${mes}-${dia}`;
+
+  return tarefa.dataEntrega < dataHojeStr;
+}
+
 
 document.getElementById('filtroTitulo').addEventListener('input', atualizarLista);
 document.getElementById('filtroStatus').addEventListener('change', atualizarLista);
