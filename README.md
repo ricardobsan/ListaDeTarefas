@@ -50,14 +50,17 @@
 	Se fosse um projeto para um cliente real, eu priorizaria uma entrega mais profissional desde o início. 
  	Teria investido mais tempo em planejar o layout com base em referências visuais claras, para não desperdiçar tempo tentando imaginar o design na hora.
 
-    Também tomaria mais cuidado com a usabilidade, deixando os botões mais ajustados ao tamanho ideal e utilizando ícones mais intuitivos, como ✅ e ❌ para ações simples. Além disso, aplicaria um sistema de status mais visual, com cores (amarelo, vermelho e verde) para facilitar a identificação rápida da situação de cada tarefa.
+    	Também tomaria mais cuidado com a usabilidade, deixando os botões mais ajustados ao tamanho ideal e utilizando ícones mais intuitivos, 
+    	como ✅ e ❌ para ações simples. Além disso, aplicaria um sistema de status mais visual, com cores (amarelo, vermelho e verde) 
+     	para facilitar a identificação rápida da situação de cada tarefa.
 
     E, principalmente, validaria os requisitos com o "cliente" antes de começar — para garantir que as funcionalidades e a aparência estivessem alinhadas com as expectativas dele.
 
 ---
 
 # Você usou alguma ferramenta ou inteligência artificial para ajudar? Como?
-    Sim, usei uma inteligência artificial para tirar dúvidas de programação, revisar textos e obter sugestões de melhorias no layout e na lógica do código. Ela me ajudou a economizar tempo e resolver problemas mais rápido.
+    Sim, usei uma inteligência artificial para tirar dúvidas de programação, revisar textos e obter sugestões de melhorias no layout e na lógica do código. 
+    Ela me ajudou a economizar tempo e resolver problemas mais rápido.
 
 <p align="center">
   <img src="./Imagens/TelaProjeto.JPG" alt="Prévia do Projeto" width="500"/>
